@@ -207,6 +207,9 @@ header {
     box-shadow: none;
     padding-left: 10px;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 }
 
