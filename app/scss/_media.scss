@@ -1,0 +1,243 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 991.9px) {
+  input {
+    font-size: 13px;
+  }
+  .tabs_wraper {
+    flex-direction: column;
+  }
+  .tabs_selectors {
+    flex-direction: row;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .fill_wrap {
+    margin-top: 20px;
+    input,
+    .jq-selectbox__select {
+      height: 30px;
+    }
+  }
+  .form_fills > div {
+    max-width: 300px;
+  }
+  .tab_block {
+    justify-content: center;
+
+    &_payment {
+      width: 300px;
+    }
+    &_card {
+      width: 300px;
+      > div .multy_fill input {
+        width: 50px;
+      }
+    }
+    &_payment_item {
+      width: 65px;
+      height: 65px;
+    }
+    &_payment_bot .tab_block_payment_item {
+      height: 45px;
+    }
+  }
+  .tab_blocks .triangle {
+    // border-top: 15px solid #fff;
+    border-bottom: 15px solid #fff;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+  }
+  .tab_blocks.standard {
+    .triangle {
+      top: -29px;
+      left: 60px;
+    }
+  }
+  .tab_blocks.express {
+    .triangle {
+      top: -29px;
+      left: 350px;
+    }
+  }
+
+  .tab_blocks.premium {
+    .triangle {
+      top: -29px;
+      left: 630px;
+    }
+  }
+  header {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    a {
+      font-size: 17px;
+    }
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 140%;
+  }
+  .fill_wrap #Email {
+    background-size: 15px;
+  }
+  .fill_wrap,
+  .terms_wrap {
+    margin-top: 15px;
+  }
+  .form_fills {
+    margin-top: 0;
+  }
+  .subtitle {
+    margin-top: 5px;
+  }
+  .jq-file {
+    width: 100px;
+  }
+  .company_wrap .file_wrap {
+    right: -100px;
+  }
+}
+@media (max-width: 767.9px) {
+  .form_fills {
+    justify-content: center;
+    flex-wrap: wrap;
+    > div {
+      max-width: none;
+      width: 100%;
+    }
+  }
+  .company_wrap .file_wrap {
+    position: static;
+    margin-top: 5px;
+  }
+  .jq-file {
+    width: auto;
+    padding-left: 100px;
+    &.focused,
+    &.changed {
+      padding-top: 0;
+    }
+    &__browse {
+      width: 100px;
+      padding-left: 0;
+    }
+    input {
+      left: 0;
+      width: 100px;
+      height: 100%;
+    }
+  }
+  .tab_block {
+    flex-wrap: wrap;
+    &_payment {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  .tab_blocks.express .triangle {
+    left: 250px;
+  }
+  .tab_blocks.premium .triangle {
+    left: 440px;
+  }
+}
+@media (max-width: 575.9px) {
+  .container {
+    padding: 0 15px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .tabs_selectors {
+    &_icon {
+      display: none;
+    }
+    &_detail {
+      text-align: center;
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+  .tab_blocks.standard .triangle {
+    left: 20px;
+  }
+  .tab_blocks.express .triangle {
+    left: 50%;
+    transform: translate(-53%, 0);
+  }
+  .tab_blocks.premium .triangle {
+    left: auto;
+    right: 30px;
+  }
+  .tab_blocks .triangle {
+    transition: none;
+  }
+  .tab_block {
+    &_payment,
+    &_card,
+    &_card_wraper {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    &_payment {
+      &_item {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &_card {
+      padding: 15px 10px;
+      > div {
+        .multy_fill input {
+          width: 50px;
+          height: 25px;
+          padding-left: 5px;
+        }
+        .sm_fill {
+          text-align: right;
+          input {
+            height: 25px;
+            width: 50px;
+          }
+        }
+        .md_fill {
+          width: 120px;
+          input {
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+  .button_row {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .jq-file {
+    padding-left: 80px;
+  }
+}
