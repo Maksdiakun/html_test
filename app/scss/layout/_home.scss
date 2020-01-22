@@ -138,7 +138,7 @@ header {
     }
   }
   &__trigger {
-    background-image: url("../../images/arrow.svg");
+    background-image: url("../images/arrow.svg");
     background-repeat: no-repeat;
     background-position: center center;
     border: none;
@@ -422,9 +422,9 @@ button[type="submit"] {
   color: #ffffff;
   transition: all 0.3s;
   &:hover {
-    transform: scale(1.05);
+    background: linear-gradient(10.65deg, #f57e80 0%, #d43535 80.64%);
   }
   &:active {
-    transform: scale(0.95);
+    background: linear-gradient(10.65deg, #f57e80 0%, #d43535 59.64%);
   }
 }
